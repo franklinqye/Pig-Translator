@@ -7,7 +7,7 @@ application = Flask(__name__)
 #####################
 
 
-application.config['FLASK_ENV'] = 'development'
+# application.config['FLASK_ENV'] = 'development'
 application.config['FLASK_DEBUG'] = True
 
 
@@ -68,7 +68,7 @@ def translateSentence(text):
 def home():
     return redirect('/translate')
 
-@application.route('/translate')
+@application.route('/translate', methods=['GET'])
 def translate():
     if 'text' in request.args:
         text = str(request.args['text'])
