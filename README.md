@@ -1,7 +1,7 @@
 # Pig-translator
 
 
-##Installation
+<h2>Installation</h2>
 
 An API microservice designed to satisfy all your pig-latin translating needs! Just follow these simple instructions and you'll have yourself an English to Pig-Latin translator in no time.
 
@@ -33,7 +33,7 @@ The app should be running at http://127.0.0.1:5000/translate?text=
 
 Append your desired input text to the end of the end point within the text argument. The app will now return that text in pig-latin. Congrats! You've got yourself a fine translator.
 
- ##Considerations n Stuff
+ <h2>Considerations n Stuff</h2>
  
  I choose to use Flask for the framework of the API due to it's simplicity in mapping endpoints to functions as well as my past familiarity working with Flask Apps as well as python. 
  
@@ -41,7 +41,7 @@ Append your desired input text to the end of the end point within the text argum
  
  In total, I spent around 5 hours building the app, with a large portion of that time spent reading up on microservice architecture and documentation.
  
- ##Testing
+ <h2>Testing</h2>
  As for Unit testing, I made unit tests for all the examples given in the spec, as well as some original sentences included in the end. The unit tests were done with the pytest package, which can be installed with 
  
  `pip install pytest`
